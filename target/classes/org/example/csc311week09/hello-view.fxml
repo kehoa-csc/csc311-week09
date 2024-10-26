@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="279.0" prefWidth="430.0" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.csc311week09.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Register Here." />
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <TextField fx:id="firstNameField" onKeyTyped="#checkFirstName" prefHeight="26.0" prefWidth="170.0" promptText="First Name" />
+         <Label fx:id="firstNameLabel" prefHeight="17.0" prefWidth="225.0" text="Empty" textAlignment="RIGHT">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </Label>
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <TextField fx:id="lastNameField" onKeyTyped="#checkLastName" prefHeight="26.0" prefWidth="170.0" promptText="Last Name" />
+         <Label fx:id="lastNameLabel" prefHeight="17.0" prefWidth="225.0" text="Empty" textAlignment="RIGHT">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </Label>
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <TextField fx:id="emailField" onKeyTyped="#checkEmail" prefHeight="26.0" prefWidth="170.0" promptText="Email" />
+         <Label fx:id="emailLabel" prefHeight="17.0" prefWidth="225.0" text="Empty" textAlignment="RIGHT">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </Label>
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <TextField fx:id="dobField" onKeyTyped="#checkDob" prefHeight="26.0" prefWidth="170.0" promptText="Date of Birth: MM/DD/YYYY" />
+         <Label fx:id="dobLabel" prefHeight="17.0" prefWidth="225.0" text="Empty" textAlignment="RIGHT">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </Label>
+      </children>
+   </HBox>
+   <HBox prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <TextField fx:id="zipField" onKeyTyped="#checkZip" prefHeight="26.0" prefWidth="170.0" promptText="ZIP Code" />
+         <Label fx:id="zipLabel" prefHeight="17.0" prefWidth="225.0" text="Empty" textAlignment="RIGHT">
+            <padding>
+               <Insets left="20.0" />
+            </padding>
+         </Label>
+      </children>
+   </HBox>
+    <Button fx:id="addButton" disable="true" onAction="#switchToSecondary" text="Add" />
+</VBox>
